@@ -1,16 +1,70 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8"/>
+  <title>IMDb Movie Detail</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #212121 0%, #444 100%);
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #fff;
+    }
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .moviePic {
+      width: 320px;
+      height: 480px;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px 0 #222a;
+      margin-bottom: 28px;
+      opacity: 0.92;
+      object-fit: cover;
+      transition: opacity 0.2s;
+    }
+    .moviePic:hover {
+      opacity: 1;
+      box-shadow: 0 12px 44px 2px #0008;
+    }
+    .movieDetail {
+      position: relative;
+      top: 0;
+      width: 54vw;
+      max-width: 430px;
+      background: rgba(34, 34, 34, 0.83);
+      padding: 22px 26px;
+      border-radius: 14px;
+      font-size: 1.22rem;
+      color: #ffd54f;
+      text-align: center;
+      box-shadow: 0 2px 16px #333b;
+      margin-bottom: 12px;
+      letter-spacing: 0.25px;
+      font-style: italic;
+    }
+    .movie-title {
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: #ffd54f;
+      margin-bottom: 12px;
+      text-shadow: 0 2px 7px #000a;
+      font-family: 'Georgia', serif;
+      text-align: center;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="main-container">
+    <div class="movie-title">Inception</div>
+    <img class="moviePic" src="https://m.media-amazon.com/images/I/51BQb69hH-L._AC_.jpg" alt="Inception Movie Poster"/>
+    <p class="movieDetail">
+      Inception is a visually stunning science fiction thriller directed by <b>Christopher Nolan</b>. It follows <i>Dom Cobb</i>, a skilled thief who enters the dreams of others to steal secrets. The movie is celebrated for its unique concept, breathtaking visuals, and a complex, layered narrative that keeps audiences engaged.
+    </p>
+  </div>
 </body>
-
 </html>
